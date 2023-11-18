@@ -53,7 +53,7 @@ jobs:
       - name: Upload build
         uses: actions/upload-artifact@v3
         with:
-          name: bdsdown-${{ env.VERSION }}-${{ matrix.GOOS }}-${{ matrix.GOARCH }}
+          name: bds-down-${{ env.VERSION }}-${{ matrix.GOOS }}-${{ matrix.GOARCH }}
           path: build
 
   upload-to-release:
